@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import Home from './routes/Home';
 import { store } from './store';
 
 import './index.css';
@@ -10,7 +11,7 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: '*',
-    element: <></>,
+    element: <Home />,
   },
 ]);
 
